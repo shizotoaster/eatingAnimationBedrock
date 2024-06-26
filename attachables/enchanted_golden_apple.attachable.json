@@ -1,0 +1,37 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "minecraft:enchanted_golden_apple",
+            "materials": {
+                "default": "entity_alphatest_glint",
+                "enchanted": "entity_alphatest_glint"
+            },
+            "textures": {
+                "default": "textures/items/apple_golden",
+                "eating_0": "textures/item/golden_apple_eating_0",
+                "eating_1": "textures/item/golden_apple_eating_1",
+                "eating_2": "textures/item/golden_apple_eating_2",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            },
+            "animations": {
+                "consumable_position": "animation.eatinganimation.consumable.position",
+                "consumable_eating": "animation.eatinganimation.consumable.eating",
+                "consumable_eating_controller": "controller.animation.consumable"
+            },
+            "geometry": {
+                "default": "geometry.eatinganimation.consumable",
+                "eating_0": "geometry.eatinganimation.consumable.eating_0",
+                "eating_1": "geometry.eatinganimation.consumable.eating_1",
+                "eating_2": "geometry.eatinganimation.consumable.eating_2"
+            },
+            "scripts": {
+                "animate": [
+                    "consumable_position",
+                    "consumable_eating_controller"
+                ]
+            },
+            "render_controllers": [ "controller.render.consumable" ]
+        }
+    }
+}

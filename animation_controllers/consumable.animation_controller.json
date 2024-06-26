@@ -1,0 +1,25 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.consumable": {
+            "initial_state": "unanimated",
+            "states": {
+                "unanimated": {
+                    "transitions": [
+                        {
+                            "eating": "c.is_first_person && q.is_using_item"
+                        }
+                    ]
+                },
+                "eating": {
+                    "animations": [ "consumable_eating" ],
+                    "transitions": [
+                        {
+                            "unanimated": "!c.is_first_person || !q.is_using_item"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

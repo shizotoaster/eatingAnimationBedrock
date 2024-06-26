@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.eatinganimation.consumable.position": {
+			"loop": true,
+			"bones": {
+				"consumable": {
+					"rotation": ["c.is_first_person ? 38.0 : 200.0", "c.is_first_person ? -120.0 : 10.0", "c.is_first_person ? -63.0 : 90.0"],
+					"position": ["c.is_first_person ? -5.5 : 3", "c.is_first_person ? 23.5 : 24.5", "c.is_first_person ? -5.0 : -6.5"],
+					"scale": "c.is_first_person ? 0.8 : 0.55"
+				}
+			}
+		},
+		"animation.eatinganimation.consumable.eating": {
+			"loop": true,
+			"bones": {
+				"consumable_animated": {
+					"rotation": [
+						"q.anim_time > 0.25 ? 8 * 4 : q.anim_time * 16 * 8",
+						0,
+						"q.anim_time > 0.25 ? 8 * 12 : q.anim_time * 16 * 24"
+					],
+					"position": [
+						"q.anim_time > 0.25 ? -12 : -q.anim_time * 48",
+						"q.anim_time > 0.25 ? 3 : q.anim_time * 12",
+						"q.anim_time > 0.25 ? math.sin(q.anim_time * 360 * 4 + 0.5) * 2"
+					]
+				}
+			}
+		}
+	}
+}

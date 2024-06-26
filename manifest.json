@@ -1,0 +1,24 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "Eating Animation",
+        "description": "This resource pack adds simple sprite animation when you eat or drink something.",
+        "uuid": "292baa54-1565-4e8a-8f58-956e667c7a58",
+        "min_engine_version": [ 1, 16, 100 ],
+        "version": [ 1, 0, 0 ]
+    },
+    "modules": [
+        {
+            "description": "Eating Animation resources",
+            "type": "resources",
+            "uuid": "a57b7ccc-85b6-43ed-bd0b-7b0c544de264",
+            "version": [ 1, 0, 0 ]
+        }
+    ],
+    "metadata": {
+        "authors": [ "shizotoaster" ],
+        "credits": [ "theone_ss", "spusik_", "PinkGoosik", "DoctorNight1" ],
+        "license": "MIT",
+        "url": "https://github.com/shizotoaster/eatingAnimationBedrock"
+    }
+}

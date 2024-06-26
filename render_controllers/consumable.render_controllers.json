@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10",
+  "render_controllers": {
+    "controller.render.consumable": {
+      "arrays": {
+        "textures": {
+          "array.texture_frames": [
+            "texture.default",
+            "texture.eating_0",
+            "texture.eating_1",
+            "texture.eating_2"
+          ]
+        },
+        "geometries": {
+          "array.geometry_frames": [
+            "geometry.default",
+            "geometry.eating_0",
+            "geometry.eating_1",
+            "geometry.eating_2"
+          ]
+        }
+      },
+      "geometry": "array.geometry_frames[ ((q.item_in_use_duration / q.item_max_use_duration) <= 0.25) ? 0 : ((q.item_in_use_duration / q.item_max_use_duration) <= 0.5 ? 1 : ((q.item_in_use_duration / q.item_max_use_duration) <= 0.75 ? 2 : (((q.item_in_use_duration / q.item_max_use_duration) <= 1 && q.is_using_item) ? 3 : 0 ) )) ]",
+      "materials": [ { "*": "variable.is_enchanted ? material.enchanted : material.default" } ],
+      "textures": [ "array.texture_frames[ ((q.item_in_use_duration / q.item_max_use_duration) <= 0.25) ? 0 : ((q.item_in_use_duration / q.item_max_use_duration) <= 0.5 ? 1 : ((q.item_in_use_duration / q.item_max_use_duration) <= 0.75 ? 2 : (((q.item_in_use_duration / q.item_max_use_duration) <= 1 && q.is_using_item) ? 3 : 0 ) )) ]", "texture.enchanted" ]
+    }
+  }
+}

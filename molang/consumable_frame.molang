@@ -1,0 +1,7 @@
+((q.item_in_use_duration / q.item_max_use_duration) <= 0.25) ? 0 :
+    ((q.item_in_use_duration / q.item_max_use_duration) <= 0.5 ? 1 :
+        ((q.item_in_use_duration / q.item_max_use_duration) <= 0.75 ? 2 :
+            (((q.item_in_use_duration / q.item_max_use_duration) <= 1 && q.is_using_item) ? 3 : 0
+        )
+    )
+)
